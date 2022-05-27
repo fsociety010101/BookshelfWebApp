@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UserSecretsId>aspnet-BookshelfWebApp-8545705B-AC94-45CA-8381-66BDB5305EE3</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.25" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.25" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.25" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.25" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Book\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Book\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Book\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Book\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Book\Index.cshtml" />
+    </ItemGroup>
+
+</Project>
